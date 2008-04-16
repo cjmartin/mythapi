@@ -2081,3 +2081,171 @@ Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 20:29:54) [GET]
   [4;35;1mRecorded Columns (0.006202)[0m   [0mSHOW FIELDS FROM `recorded`[0m
   [4;36;1mRecorded Load (0.024766)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
 Completed in 0.48820 (2 reqs/sec) | Rendering: 0.43759 (89%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+  [4;36;1mSQL (0.000172)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000087)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.004762)[0m   [0;1mCREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.000419)[0m   [0mINSERT INTO `schema_info` (version) VALUES(0)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.000408)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000347)[0m   [0;1mSHOW TABLES[0m
+
+
+Processing RecordedController#list (for 192.168.1.128 at 2008-04-15 22:13:22) [GET]
+  Session ID: ba22922c8bfb2d914d0dbf974d8dfe60
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000166)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000089)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.002872)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.002098)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.60907 (1 reqs/sec) | Rendering: 0.57784 (94%) | DB: 0.00026 (0%) | 200 OK [http://192.168.1.120/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 192.168.1.128 at 2008-04-15 22:47:33) [GET]
+  Session ID: ed5fb0eb1f4d9ec95491655670c742cf
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000130)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.002868)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.000417)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.71818 (1 reqs/sec) | Rendering: 0.60573 (84%) | DB: 0.00000 (0%) | 200 OK [http://192.168.1.120/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 192.168.1.128 at 2008-04-15 22:48:14) [GET]
+  Session ID: 460d00aa52419b1693927bea8f202fab
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000129)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.002971)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.000416)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.61123 (1 reqs/sec) | Rendering: 0.58043 (94%) | DB: 0.00000 (0%) | 200 OK [http://192.168.1.120/recorded/list?order=starttime+DESC]
+ActiveMessaging: adapter reliable_msg not loaded: no such file to load -- reliable-msg
+ActiveMessaging: adapter wmq not loaded: no such file to load -- wmq/wmq
+ActiveMessaging: no '/home/cjmartin/Rails/mythapi/config/messaging.rb' file to load
+ActiveMessaging: Loading /home/cjmartin/Rails/mythapi/app/processors/application.rb
+ActiveMessaging: adapter reliable_msg not loaded: no such file to load -- reliable-msg
+ActiveMessaging: adapter wmq not loaded: no such file to load -- wmq/wmq
+ActiveMessaging: no '/home/cjmartin/Rails/mythapi/config/messaging.rb' file to load
+ActiveMessaging: Loading /home/cjmartin/Rails/mythapi/app/processors/application.rb
+  [4;36;1mSQL (0.000163)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000084)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000637)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateVideos (1)
+  [4;35;1mSQL (0.004751)[0m   [0mCREATE TABLE `videos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `height` int(11) DEFAULT NULL, `width` int(11) DEFAULT NULL, `video_url` varchar(255) DEFAULT NULL, `file_name` varchar(255) DEFAULT NULL, `ext` varchar(255) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000344)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;35;1mSQL (0.000386)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000344)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.004869)[0m   [0mSHOW FIELDS FROM `videos`[0m
+  [4;36;1mSQL (0.001367)[0m   [0;1mdescribe `videos`[0m
+  [4;35;1mSQL (0.000490)[0m   [0mSHOW KEYS FROM `videos`[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-04-15 23:21:48) [GET]
+  Session ID: 7ea48a3a82f92b1f50c18dd32b893899
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/video" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing VideosController#index (for 127.0.0.1 at 2008-04-15 23:21:53) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--e76f6d93fca0b972d1beaf36ae1016b387cedcd4
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;36;1mSQL (0.000421)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.002602)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mVideo Load (0.000529)[0m   [0;1mSELECT * FROM `videos` [0m
+Rendering template within layouts/videos
+Rendering videos/index
+Completed in 0.03610 (27 reqs/sec) | Rendering: 0.01293 (35%) | DB: 0.00355 (9%) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#new (for 127.0.0.1 at 2008-04-15 23:22:02) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--e76f6d93fca0b972d1beaf36ae1016b387cedcd4
+  Parameters: {"action"=>"new", "controller"=>"videos"}
+  [4;35;1mVideo Columns (0.001477)[0m   [0mSHOW FIELDS FROM `videos`[0m
+Rendering template within layouts/videos
+Rendering videos/new
+Completed in 0.02194 (45 reqs/sec) | Rendering: 0.00975 (44%) | DB: 0.00148 (6%) | 200 OK [http://localhost/videos/new]
+ActiveMessaging: adapter reliable_msg not loaded: no such file to load -- reliable-msg
+ActiveMessaging: adapter wmq not loaded: no such file to load -- wmq/wmq
+ActiveMessaging: no '/home/cjmartin/Rails/mythapi/config/messaging.rb' file to load
+ActiveMessaging: Loading /home/cjmartin/Rails/mythapi/app/processors/application.rb
+  [4;36;1mSQL (0.000119)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000086)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RecordedController#list (for 128.61.18.130 at 2008-04-16 10:02:01) [GET]
+  Session ID: 1a02e08f5afccdc145926739d07a2d31
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000151)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.003001)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.002102)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.81370 (1 reqs/sec) | Rendering: 0.72266 (88%) | DB: 0.00020 (0%) | 200 OK [http://home.cjmart.in/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 128.61.18.130 at 2008-04-16 10:05:30) [GET]
+  Session ID: 45459b15d54305f15d9502d80b3aa904
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000130)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.003869)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.000420)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.64326 (1 reqs/sec) | Rendering: 0.61247 (95%) | DB: 0.00000 (0%) | 200 OK [http://home.cjmart.in/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 128.61.18.130 at 2008-04-16 10:05:39) [GET]
+  Session ID: 6df1ecc2cdb7e8666af336e8e4c8be3f
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000132)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.002879)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.000415)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.74697 (1 reqs/sec) | Rendering: 0.71808 (96%) | DB: 0.00000 (0%) | 200 OK [http://home.cjmart.in/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 128.61.18.130 at 2008-04-16 10:06:29) [GET]
+  Session ID: 8fdaa1328957ace8194a8f26a94b64ba
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000131)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.002816)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.000414)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.71895 (1 reqs/sec) | Rendering: 0.69014 (95%) | DB: 0.00000 (0%) | 200 OK [http://home.cjmart.in/recorded/list?order=starttime+DESC]

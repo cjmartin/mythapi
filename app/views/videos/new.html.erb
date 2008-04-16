@@ -1,0 +1,36 @@
+<h1>New video</h1>
+
+<%= error_messages_for :video %>
+
+<% form_for(@video) do |f| %>
+  <p>
+    <b>Height</b><br />
+    <%= f.text_field :height %>
+  </p>
+
+  <p>
+    <b>Width</b><br />
+    <%= f.text_field :width %>
+  </p>
+
+  <p>
+    <b>Video url</b><br />
+    <%= f.text_field :video_url %>
+  </p>
+
+  <p>
+    <b>File name</b><br />
+    <%= f.text_field :file_name %>
+  </p>
+
+  <p>
+    <b>Ext</b><br />
+    <%= f.text_field :ext %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', videos_path %>

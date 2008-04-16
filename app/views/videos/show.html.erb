@@ -1,0 +1,28 @@
+<p>
+  <b>Height:</b>
+  <%=h @video.height %>
+</p>
+
+<p>
+  <b>Width:</b>
+  <%=h @video.width %>
+</p>
+
+<p>
+  <b>Video url:</b>
+  <%=h @video.video_url %>
+</p>
+
+<p>
+  <b>File name:</b>
+  <%=h @video.file_name %>
+</p>
+
+<p>
+  <b>Ext:</b>
+  <%=h @video.ext %>
+</p>
+
+
+<%= link_to 'Edit', edit_video_path(@video) %> |
+<%= link_to 'Back', videos_path %>

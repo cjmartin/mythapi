@@ -1,0 +1,28 @@
+<h1>Listing videos</h1>
+
+<table>
+  <tr>
+    <th>Height</th>
+    <th>Width</th>
+    <th>Video url</th>
+    <th>File name</th>
+    <th>Ext</th>
+  </tr>
+
+<% for video in @videos %>
+  <tr>
+    <td><%=h video.height %></td>
+    <td><%=h video.width %></td>
+    <td><%=h video.video_url %></td>
+    <td><%=h video.file_name %></td>
+    <td><%=h video.ext %></td>
+    <td><%= link_to 'Show', video %></td>
+    <td><%= link_to 'Edit', edit_video_path(video) %></td>
+    <td><%= link_to 'Destroy', video, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New video', new_video_path %>

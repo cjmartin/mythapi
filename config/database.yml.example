@@ -17,10 +17,10 @@
 development:
   adapter: mysql
   encoding: utf8
-  database: mythapi_dev
+  database: mythapi_development
   username: root
-  password:
-  socket: /tmp/mysql.sock
+  password: 
+  socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as 'test' will be erased and
 # re-generated from your development database when you run 'rake'.
@@ -30,21 +30,21 @@ test:
   encoding: utf8
   database: mythapi_test
   username: root
-  password:
-  socket: /tmp/mysql.sock
+  password: 
+  socket: /var/run/mysqld/mysqld.sock
 
 production:
   adapter: mysql
   encoding: utf8
-  database: mythapi_prod
+  database: mythapi_production
   username: root
   password: 
-  socket: /tmp/mysql.sock
+  socket: /var/run/mysqld/mysqld.sock
   
 mythconverg:
     adapter: mysql 
     database: mythconverg
     username: root
-    password:
-    socket: /tmp/mysql.sock
+    password: 
+    socket: /var/run/mysqld/mysqld.sock
     
