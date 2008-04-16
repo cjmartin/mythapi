@@ -35,6 +35,7 @@ class TranscodeProcessor < ApplicationProcessor
 			@video.width = file.width
 			@video.height = file.height
 			@video.save
+			
 			rescue TranscoderError => e
 				puts "Unable to transcode file: #{e.class} - #{e.message}"
 			end
