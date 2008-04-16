@@ -1,4 +1,3 @@
-require 'aws/s3'
 require 'rvideo'
 
 class TranscodeProcessor < ApplicationProcessor
@@ -7,7 +6,6 @@ class TranscodeProcessor < ApplicationProcessor
   def on_message(message)
     payload = YAML::load(message)
     transcode_file( payload.ivars['id'], payload.iavrs['src'], payload.ivars['dst'] )
-#    upload_s3(payload.ivars['id'], payload.ivars['dst'])
   end
 
 	def transcode_file(id, src, destination)
