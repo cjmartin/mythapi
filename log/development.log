@@ -1,0 +1,2083 @@
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000247)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000211)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.002130)[0m   [0;1mCREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.000695)[0m   [0mINSERT INTO `schema_info` (version) VALUES(0)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.024797)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000892)[0m   [0;1mSHOW TABLES[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000182)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000150)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000361)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000445)[0m   [0mSHOW TABLES[0m
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 12:48:25) [GET]
+  Session ID: 0b7ed32adeeb2e292ec759742ea3dcea
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000247)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000174)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000230)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.005246)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.548977)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+
+
+ActionController::MissingTemplate (Missing template recorded/list.html.erb in view path /Users/cjmartin/Rails/mythapi/app/views):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1269:in `assert_existence_of_template_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1098:in `render_for_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-04-14 13:01:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--e76f6d93fca0b972d1beaf36ae1016b387cedcd4
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/recorded/list.cml" with {:method=>:get}):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-04-14 13:01:38) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--e76f6d93fca0b972d1beaf36ae1016b387cedcd4
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/recorded/list.xml" with {:method=>:get}):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 13:01:41) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--e76f6d93fca0b972d1beaf36ae1016b387cedcd4
+  Parameters: {"action"=>"list", "id"=>"xml", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000207)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006615)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.014610)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Rendering recorded/list
+
+
+ActionView::TemplateError (undefined local variable or method `xml' for #<ActionView::Base:0x11f6f68>) on line #3 of recorded/list.xml.erb:
+1: <%
+2: for recording in @recordings
+3: 	xml.recording do
+4: 		xml.title(recording.title)
+5: 	end
+6: end
+
+    app/views/recorded/list.xml.erb:3:in `_run_erb_47app47views47recorded47list46xml46erb'
+    app/views/recorded/list.xml.erb:2:in `_run_erb_47app47views47recorded47list46xml46erb'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/recorded_controller.rb:5:in `list'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 13:01:50) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--e76f6d93fca0b972d1beaf36ae1016b387cedcd4
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000209)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006817)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.050356)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Rendering recorded/list
+
+
+ActionView::TemplateError (undefined local variable or method `xml' for #<ActionView::Base:0x168cb68>) on line #3 of recorded/list.xml.erb:
+1: <%
+2: for recording in @recordings
+3: 	xml.recording do
+4: 		xml.title(recording.title)
+5: 	end
+6: end
+
+    app/views/recorded/list.xml.erb:3:in `_run_erb_47app47views47recorded47list46xml46erb'
+    app/views/recorded/list.xml.erb:2:in `_run_erb_47app47views47recorded47list46xml46erb'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/recorded_controller.rb:5:in `list'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 13:03:16) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--e76f6d93fca0b972d1beaf36ae1016b387cedcd4
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000208)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006663)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.015239)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45139 (2 reqs/sec) | Rendering: 0.41104 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 15:18:19) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--e76f6d93fca0b972d1beaf36ae1016b387cedcd4
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000211)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006602)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.052175)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.44803 (2 reqs/sec) | Rendering: 0.37149 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 16:12:52) [GET]
+  Session ID: 8efc98627cd0fb83cb7415ce382e55c5
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000219)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006579)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.014880)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.44684 (2 reqs/sec) | Rendering: 0.36973 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-04-14 16:12:52) [GET]
+  Session ID: 01eb8339fbf820f18528ec99bf04f508
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/people/list" with {:method=>:get}):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-04-14 16:12:52) [GET]
+  Session ID: 4c1ef9bbb9a803d175214fae2b45627d
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/people/list" with {:method=>:get}):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 16:17:04) [GET]
+  Session ID: 8a0f16192f9f4122581649cd96dedcfd
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000211)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006193)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.015363)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.44376 (2 reqs/sec) | Rendering: 0.40429 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 16:19:04) [GET]
+  Session ID: ce85773580306b26b0f3e21af7654e4e
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.009832)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.007050)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.018583)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.53416 (1 reqs/sec) | Rendering: 0.46145 (86%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 16:19:45) [GET]
+  Session ID: 520280c7cb915fb614d1aa45fec73292
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000218)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006817)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.015217)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.44661 (2 reqs/sec) | Rendering: 0.40582 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 17:13:31) [GET]
+  Session ID: c8e40332758cabe10441303076c17b7e
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000212)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006597)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.052217)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45094 (2 reqs/sec) | Rendering: 0.37210 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 17:16:03) [GET]
+  Session ID: 3aaa2f26a50d305e228aea5287933509
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000224)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006195)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.012383)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45748 (2 reqs/sec) | Rendering: 0.38251 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 17:18:56) [GET]
+  Session ID: 0d1350ff8775143a89a41a351c96cedd
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000229)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.007167)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.013875)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45308 (2 reqs/sec) | Rendering: 0.37252 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 17:34:53) [GET]
+  Session ID: 88d666cf5fc6da0603bc12dc6098ede4
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000239)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006244)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.011834)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.44277 (2 reqs/sec) | Rendering: 0.40443 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 17:38:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--e76f6d93fca0b972d1beaf36ae1016b387cedcd4
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000213)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.004700)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.011443)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.44833 (2 reqs/sec) | Rendering: 0.41242 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing RecordedController#get_recording (for 127.0.0.1 at 2008-04-14 17:38:41) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--e76f6d93fca0b972d1beaf36ae1016b387cedcd4
+  Parameters: {"chanid"=>"1003", "action"=>"get_recording", "controller"=>"recorded", "starttime"=>"1208138520"}
+  [4;36;1mSQL (0.000287)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006061)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.086347)[0m   [0;1mSELECT * FROM `recorded` WHERE (`recorded`.`chanid` = '1003' AND `recorded`.`starttime` = '1208138520') LIMIT 1[0m
+
+
+ActionController::MissingTemplate (Missing template recorded/get_recording.html.erb in view path /Users/cjmartin/Rails/mythapi/app/views):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1269:in `assert_existence_of_template_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1098:in `render_for_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:914:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /app/controllers/recorded_controller.rb:10:in `get_recording'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RecordedController#get_recording (for 127.0.0.1 at 2008-04-14 17:40:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--e76f6d93fca0b972d1beaf36ae1016b387cedcd4
+  Parameters: {"chanid"=>"1003", "action"=>"get_recording", "controller"=>"recorded", "starttime"=>"1208138520"}
+  [4;35;1mSQL (0.000219)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006554)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.003825)[0m   [0mSELECT * FROM `recorded` WHERE (`recorded`.`chanid` = '1003' AND `recorded`.`starttime` = '1208138520') LIMIT 1[0m
+
+
+ActionController::MissingTemplate (Missing template recorded/get_recording.html.erb in view path /Users/cjmartin/Rails/mythapi/app/views):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1269:in `assert_existence_of_template_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1098:in `render_for_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:914:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /app/controllers/recorded_controller.rb:10:in `get_recording'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 17:48:11) [GET]
+  Session ID: 38b531094d9f6a8c952a77b4b6776092
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000214)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006020)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.015147)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45254 (2 reqs/sec) | Rendering: 0.41262 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 17:49:32) [GET]
+  Session ID: b3ed501794595ae5e4ad4eb7c4e2102c
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000243)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.008579)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.014413)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.44757 (2 reqs/sec) | Rendering: 0.40610 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 17:53:02) [GET]
+  Session ID: 07f9309007775b982cc3b27820826820
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000584)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.005772)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.057824)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45285 (2 reqs/sec) | Rendering: 0.37110 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 17:55:02) [GET]
+  Session ID: b6ae4318aaf5250c2af7d4c3dacac763
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000214)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.007306)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.053038)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.44760 (2 reqs/sec) | Rendering: 0.36941 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing RecordedController#:chanid (for 127.0.0.1 at 2008-04-14 17:56:15) [GET]
+  Session ID: 177a6070aa34991a25e9d5751493f0d5
+  Parameters: {"action"=>":chanid", "id"=>":starttime", "controller"=>"recorded"}
+
+
+ActionController::UnknownAction (No action responded to :chanid):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 17:56:53) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--e76f6d93fca0b972d1beaf36ae1016b387cedcd4
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000214)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.005302)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.011617)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.44500 (2 reqs/sec) | Rendering: 0.41063 (92%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing RecordedController#get_recording (for 127.0.0.1 at 2008-04-14 17:59:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--e76f6d93fca0b972d1beaf36ae1016b387cedcd4
+  Parameters: {"chanid"=>"1060", "action"=>"get_recording", "controller"=>"recorded", "starttime"=>"1206118800"}
+  [4;35;1mSQL (0.000239)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006978)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.003310)[0m   [0mSELECT * FROM `recorded` WHERE (`recorded`.`chanid` = '1060' AND `recorded`.`starttime` = '2008-03-21 13:00:00') LIMIT 1[0m
+Completed in 0.03876 (25 reqs/sec) | Rendering: 0.01205 (31%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/1060/1206118800]
+
+
+Processing RecordedController#:chanid (for 127.0.0.1 at 2008-04-14 18:00:00) [GET]
+  Session ID: 0b72c88d041ccd0d8c9d80ff9d6e7b63
+  Parameters: {"action"=>":chanid", "id"=>":starttime", "controller"=>"recorded"}
+
+
+ActionController::UnknownAction (No action responded to :chanid):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing RecordedController#:chanid (for 127.0.0.1 at 2008-04-14 18:00:03) [GET]
+  Session ID: fb2773a7b11439b1bae0bb99d306078f
+  Parameters: {"action"=>":chanid", "id"=>":starttime", "controller"=>"recorded"}
+
+
+ActionController::UnknownAction (No action responded to :chanid):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing RecordedController#:chanid (for 127.0.0.1 at 2008-04-14 18:01:03) [GET]
+  Session ID: 588b541e58b2c48cc90ee95f05c7da79
+  Parameters: {"action"=>":chanid", "id"=>":starttime", "controller"=>"recorded"}
+
+
+ActionController::UnknownAction (No action responded to :chanid):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing RecordedController#:chanid (for 127.0.0.1 at 2008-04-14 18:01:15) [GET]
+  Session ID: a30fa757b207e9be121efcc22c5360cc
+  Parameters: {"action"=>":chanid", "id"=>":starttime", "controller"=>"recorded"}
+
+
+ActionController::UnknownAction (No action responded to :chanid):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing RecordedController#:chanid (for 127.0.0.1 at 2008-04-14 18:02:04) [GET]
+  Session ID: 5fb848a33cfa1043460734c3aa0f7695
+  Parameters: {"action"=>":chanid", "id"=>":starttime", "controller"=>"recorded"}
+
+
+ActionController::UnknownAction (No action responded to :chanid):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing RecordedController#:chanid (for 127.0.0.1 at 2008-04-14 18:04:02) [GET]
+  Session ID: 5a8d4ba532803ae0af630ee3e6bd028a
+  Parameters: {"action"=>":chanid", "id"=>":starttime", "controller"=>"recorded"}
+
+
+ActionController::UnknownAction (No action responded to :chanid):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing RecordedController#get_recording (for 127.0.0.1 at 2008-04-14 18:05:27) [GET]
+  Session ID: c0c6bc78a48dd398e8cc878d1af3c703
+  Parameters: {"chanid"=>"1060", "action"=>"get_recording", "controller"=>"recorded", "starttime"=>"1206118800"}
+  [4;36;1mSQL (0.000223)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.007214)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.003827)[0m   [0;1mSELECT * FROM `recorded` WHERE (`recorded`.`chanid` = '1060' AND `recorded`.`starttime` = '2008-03-21 13:00:00') LIMIT 1[0m
+Completed in 0.03879 (25 reqs/sec) | Rendering: 0.00973 (25%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/1060/1206118800]
+
+
+Processing RecordedController#get_recording (for 127.0.0.1 at 2008-04-14 18:07:13) [GET]
+  Session ID: 7375db1129a9c9be36d533df2d35be81
+  Parameters: {"chanid"=>"1060", "action"=>"get_recording", "controller"=>"recorded", "starttime"=>"1206118800"}
+  [4;35;1mSQL (0.000209)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.004988)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.002586)[0m   [0mSELECT * FROM `recorded` WHERE (`recorded`.`chanid` = '1060' AND `recorded`.`starttime` = '2008-03-21 13:00:00') LIMIT 1[0m
+Completed in 0.07239 (13 reqs/sec) | Rendering: 0.04898 (67%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/1060/1206118800]
+
+
+Processing RecordedController#get_recording (for 127.0.0.1 at 2008-04-14 18:10:56) [GET]
+  Session ID: cd258dced5d7f89d8b8a92708342d432
+  Parameters: {"chanid"=>"1060", "action"=>"get_recording", "controller"=>"recorded", "starttime"=>"1206118800"}
+  [4;36;1mSQL (0.000213)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006986)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.008660)[0m   [0;1mSELECT * FROM `recorded` WHERE (`recorded`.`chanid` = '1060' AND `recorded`.`starttime` = '2008-03-21 13:00:00') LIMIT 1[0m
+Completed in 0.04361 (22 reqs/sec) | Rendering: 0.01176 (26%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/1060/1206118800]
+
+
+Processing RecordedController#get_recording (for 127.0.0.1 at 2008-04-14 18:12:37) [GET]
+  Session ID: cce65bf90e30783657195f483acfa934
+  Parameters: {"chanid"=>"1060", "action"=>"get_recording", "controller"=>"recorded", "starttime"=>"1206118800"}
+  [4;35;1mSQL (0.000226)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.005087)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.002552)[0m   [0mSELECT * FROM `recorded` WHERE (`recorded`.`chanid` = '1060' AND `recorded`.`starttime` = '2008-03-21 13:00:00') LIMIT 1[0m
+Completed in 0.07580 (13 reqs/sec) | Rendering: 0.05341 (70%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/1060/1206118800]
+
+
+Processing RecordedController#get_recording (for 127.0.0.1 at 2008-04-14 18:12:50) [GET]
+  Session ID: 7596e44e9830cd54236253a0c55eb3ef
+  Parameters: {"chanid"=>"1060", "action"=>"get_recording", "controller"=>"recorded", "starttime"=>"1206118800"}
+  [4;36;1mSQL (0.000217)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006573)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.003484)[0m   [0;1mSELECT * FROM `recorded` WHERE (`recorded`.`chanid` = '1060' AND `recorded`.`starttime` = '2008-03-21 13:00:00') LIMIT 1[0m
+Completed in 0.03835 (26 reqs/sec) | Rendering: 0.01255 (32%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/1060/1206118800]
+
+
+Processing RecordedController#get_recording (for 127.0.0.1 at 2008-04-14 18:13:08) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--e76f6d93fca0b972d1beaf36ae1016b387cedcd4
+  Parameters: {"chanid"=>"1060", "action"=>"get_recording", "controller"=>"recorded", "starttime"=>"1206118800"}
+  [4;35;1mSQL (0.000213)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.049652)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.002522)[0m   [0mSELECT * FROM `recorded` WHERE (`recorded`.`chanid` = '1060' AND `recorded`.`starttime` = '2008-03-21 13:00:00') LIMIT 1[0m
+Completed in 0.07666 (13 reqs/sec) | Rendering: 0.00933 (12%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/1060/1206118800]
+
+
+Processing RecordedController#get_recording (for 127.0.0.1 at 2008-04-14 18:17:06) [GET]
+  Session ID: 3b9e292dc8f6676b5eca362a1df69626
+  Parameters: {"chanid"=>"1060", "action"=>"get_recording", "controller"=>"recorded", "starttime"=>"1206118800"}
+  [4;36;1mSQL (0.000213)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.004590)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.002337)[0m   [0;1mSELECT * FROM `recorded` WHERE (`recorded`.`chanid` = '1060' AND `recorded`.`starttime` = '2008-03-21 13:00:00') LIMIT 1[0m
+Completed in 0.03122 (32 reqs/sec) | Rendering: 0.00974 (31%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/1060/1206118800]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 18:31:06) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--e76f6d93fca0b972d1beaf36ae1016b387cedcd4
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000212)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006682)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.014065)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45166 (2 reqs/sec) | Rendering: 0.37459 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 18:47:35) [GET]
+  Session ID: 4c645b1c42166f927b28b28a56978fef
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000223)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.007163)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.018510)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45463 (2 reqs/sec) | Rendering: 0.40937 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 19:07:37) [GET]
+  Session ID: 89a4f58df80cd04bac3a7a271e2a4290
+  Parameters: {"action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000214)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006559)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.017111)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.44738 (2 reqs/sec) | Rendering: 0.40546 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 19:09:53) [GET]
+  Session ID: 660223743ad64419611c57d251ebf48c
+  Parameters: {"order"=>"starttime ASC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000212)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006579)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.014359)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.44964 (2 reqs/sec) | Rendering: 0.41078 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+ASC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 19:18:36) [GET]
+  Session ID: 6d806737cce08a9e117a38c021acc4bb
+  Parameters: {"order"=>"starttime ASC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000215)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006923)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.051906)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime ASC[0m
+Completed in 0.44998 (2 reqs/sec) | Rendering: 0.37345 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+ASC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 19:20:20) [GET]
+  Session ID: 4661449e8fa2aa1bd5098e9dfc475c0e
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000214)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.007380)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.015934)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.44770 (2 reqs/sec) | Rendering: 0.36749 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 19:37:40) [GET]
+  Session ID: 93126489f3ac7c7c961a609c8c0dd1e4
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000376)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.005299)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.012232)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.50599 (1 reqs/sec) | Rendering: 0.46792 (92%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 19:37:43) [GET]
+  Session ID: eb29b159f1b76fbda2ba502dfa757799
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000223)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.004696)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.015849)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.55571 (1 reqs/sec) | Rendering: 0.51295 (92%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 19:38:31) [GET]
+  Session ID: 3dac362c9b000e730526da70132ccb70
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000220)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.007761)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.011197)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45354 (2 reqs/sec) | Rendering: 0.41657 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 19:39:22) [GET]
+  Session ID: f538a19a623f7b53810ae9268e292993
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000215)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006804)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.016018)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45846 (2 reqs/sec) | Rendering: 0.41767 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 19:46:28) [GET]
+  Session ID: 24ce4c8852e1e4d96b581d12d2c563b4
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000235)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006858)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.052031)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45305 (2 reqs/sec) | Rendering: 0.37639 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 19:55:25) [GET]
+  Session ID: 9ee55a146a2aa665bad23905ad7d2621
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000212)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.007345)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.018562)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45331 (2 reqs/sec) | Rendering: 0.37102 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 19:57:13) [GET]
+  Session ID: 618aacc0feb7ec6fffd9a83a06f5c61a
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000220)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.007005)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.014224)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.41261 (2 reqs/sec) | Rendering: 0.37338 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:04:00) [GET]
+  Session ID: d333171efb9f55bd1c03c9b237403a10
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000809)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006701)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.013024)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.44899 (2 reqs/sec) | Rendering: 0.40917 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:05:01) [GET]
+  Session ID: e5933e6282adfb4a5f06be28f442ff6f
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000212)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.007275)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.015552)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45303 (2 reqs/sec) | Rendering: 0.41134 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:10:28) [GET]
+  Session ID: edbb25c87187d1cf06cf989e27b0059f
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000213)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.007728)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.054387)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46260 (2 reqs/sec) | Rendering: 0.38235 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:12:34) [GET]
+  Session ID: 058de964b34274421ba279ac829db2f2
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000212)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.054021)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.011533)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.47230 (2 reqs/sec) | Rendering: 0.38913 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:13:14) [GET]
+  Session ID: 400588484b96cb3638b7a352b1045410
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000225)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.005636)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.013608)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.44674 (2 reqs/sec) | Rendering: 0.37319 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#get_recording (for 127.0.0.1 at 2008-04-14 20:16:21) [GET]
+  Session ID: 1921b2fc1af036d5c6ccb8f8abed12d1
+  Parameters: {"chanid"=>"1060", "action"=>"get_recording", "controller"=>"recorded", "starttime"=>"1206118800"}
+  [4;35;1mSQL (0.000230)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006221)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.005101)[0m   [0mSELECT * FROM `recorded` WHERE (`recorded`.`chanid` = '1060' AND `recorded`.`starttime` = '2008-03-21 13:00:00') LIMIT 1[0m
+Completed in 0.03968 (25 reqs/sec) | Rendering: 0.01165 (29%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/1060/1206118800]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:25:40) [GET]
+  Session ID: 58db6b20c30679db3222ee4afc07bb9f
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000231)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.005244)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.018942)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45818 (2 reqs/sec) | Rendering: 0.41597 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:32:25) [GET]
+  Session ID: 7211466174c11e92c7e1768b9fae95b3
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000284)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.009948)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.067956)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.48481 (2 reqs/sec) | Rendering: 0.37666 (77%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:32:39) [GET]
+  Session ID: 4f40af98df608d47d5262b067b2b9b18
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000311)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.007975)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.015458)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46329 (2 reqs/sec) | Rendering: 0.38089 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:33:27) [GET]
+  Session ID: 5c02cf60715e0d1e08738aa761c4879c
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000215)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006809)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.016510)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45715 (2 reqs/sec) | Rendering: 0.41297 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:34:23) [GET]
+  Session ID: a3c6c4e53313012321db535aa59d66b4
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000213)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006794)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.013172)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45236 (2 reqs/sec) | Rendering: 0.41351 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:34:45) [GET]
+  Session ID: 6bb46236d818bbbddae0837d706dff85
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000211)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006826)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.013833)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45270 (2 reqs/sec) | Rendering: 0.41383 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:40:52) [GET]
+  Session ID: 0b3d207ff94f87558db4951878736368
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000417)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.008607)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.220016)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 1.17469 (0 reqs/sec) | Rendering: 0.46559 (39%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:44:56) [GET]
+  Session ID: 845ead54453d36528d315c9c3023348b
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000221)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.005023)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.051178)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.50729 (1 reqs/sec) | Rendering: 0.43319 (85%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:47:07) [GET]
+  Session ID: aeffa1844dbef99dd7f0ce417f1784a7
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000221)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.007753)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.015240)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.47207 (2 reqs/sec) | Rendering: 0.43017 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:49:55) [GET]
+  Session ID: 93e6d28b4343c05ccbfc8d613073848c
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000231)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.005099)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.050528)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46080 (2 reqs/sec) | Rendering: 0.38723 (84%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:54:31) [GET]
+  Session ID: 29069cdcadfdc293e969add30adaf530
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000251)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006899)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.016073)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46246 (2 reqs/sec) | Rendering: 0.41695 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:55:33) [GET]
+  Session ID: d4f12f6eba53748a5550cc05ac1d8d87
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000212)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006535)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.015132)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46132 (2 reqs/sec) | Rendering: 0.42143 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:56:38) [GET]
+  Session ID: 2c875971c80666ccbe8672f6176dec15
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000297)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006742)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.015182)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.49594 (2 reqs/sec) | Rendering: 0.41790 (84%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-14 20:56:57) [GET]
+  Session ID: 0e6234f9b0f1836cc475d55625434c0e
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000215)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006926)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.019558)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46650 (2 reqs/sec) | Rendering: 0.42137 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 00:40:33) [GET]
+  Session ID: 2acce713ff0f774b0c3744f331a5eea8
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000209)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.004811)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.013265)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.50840 (1 reqs/sec) | Rendering: 0.41239 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+  [4;35;1mSQL (0.000282)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.000241)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000245)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 10:19:08) [GET]
+  Session ID: 8f4d208914fcad344a79e64dfb647f46
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000256)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006130)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.014176)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.57108 (1 reqs/sec) | Rendering: 0.47928 (83%) | DB: 0.00052 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 10:21:50) [GET]
+  Session ID: 3b52ff283deec9947faf12405486e597
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000211)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006046)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.053151)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.50867 (1 reqs/sec) | Rendering: 0.40268 (79%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 10:22:12) [GET]
+  Session ID: e77be3b0ce961fc781ed3a0d7448a69b
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000210)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006191)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.015258)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.44728 (2 reqs/sec) | Rendering: 0.40746 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 10:31:11) [GET]
+  Session ID: e76eeb616bc248b2ef55c91ac48c1de7
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000210)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006671)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.015662)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45632 (2 reqs/sec) | Rendering: 0.41536 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 10:31:52) [GET]
+  Session ID: 0c117f1fcbc7be242a8ec94be6124902
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000209)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.004983)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.011787)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.48246 (2 reqs/sec) | Rendering: 0.41109 (85%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 10:32:19) [GET]
+  Session ID: 2d6f8a517a1c49d2b73f90efaab353c6
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000212)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.007268)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.015411)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45289 (2 reqs/sec) | Rendering: 0.41155 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 10:35:44) [GET]
+  Session ID: d3dc9844f1ea6773ba402d2965c365d4
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000243)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.027543)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.089599)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.51140 (1 reqs/sec) | Rendering: 0.37397 (73%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 10:36:44) [GET]
+  Session ID: d60eacb7f029742c6317bb7bb193dc0d
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000210)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006980)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.016930)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.44928 (2 reqs/sec) | Rendering: 0.40624 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 10:51:02) [GET]
+  Session ID: b052f09569a064c26fe08c3707fa1a28
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000210)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006311)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.015894)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.47288 (2 reqs/sec) | Rendering: 0.43240 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:01:06) [GET]
+  Session ID: 450e14031216ebc87773e48b0264bb44
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000232)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006255)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.020729)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.50765 (1 reqs/sec) | Rendering: 0.41363 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:02:20) [GET]
+  Session ID: 217a6f882593d27d8fd56b50c8d36de7
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000262)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.005164)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.016725)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.67055 (1 reqs/sec) | Rendering: 0.62979 (93%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:04:11) [GET]
+  Session ID: 79119f5cbb93a381553a9cd3b7754e6b
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000209)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006669)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.057045)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45996 (2 reqs/sec) | Rendering: 0.37821 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:04:56) [GET]
+  Session ID: 5c5348eb0429ae7cfed4f379e888cc6c
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000225)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.004841)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.012701)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.44485 (2 reqs/sec) | Rendering: 0.40970 (92%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:14:38) [GET]
+  Session ID: 4f2fd0a1fd850d019ebf288e5e623c6d
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000209)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.005231)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.011659)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46450 (2 reqs/sec) | Rendering: 0.43032 (92%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:14:49) [GET]
+  Session ID: ff645d366a120f12668e1e0a47ea9b1e
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000210)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006249)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.013896)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.54941 (1 reqs/sec) | Rendering: 0.42996 (78%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:15:41) [GET]
+  Session ID: eee1b17c64ac38ee04f52c2f2425b54e
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000228)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006090)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.014546)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45224 (2 reqs/sec) | Rendering: 0.41404 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:16:32) [GET]
+  Session ID: 3bc13255e710bfac54e366e42db25f0b
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000209)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006684)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.052996)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46024 (2 reqs/sec) | Rendering: 0.38159 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:17:14) [GET]
+  Session ID: 661bc9b7a0b20ae7eb8c6fde4345cb55
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000210)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006609)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.016285)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45685 (2 reqs/sec) | Rendering: 0.41566 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:19:44) [GET]
+  Session ID: d20f8520ed30afc4bd58ea4c3548ea1e
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000222)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.004769)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.017853)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.47058 (2 reqs/sec) | Rendering: 0.42868 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:33:38) [GET]
+  Session ID: a163f96e0387b82eb9b0c2e0d52620c1
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000212)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006708)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.019289)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.50263 (1 reqs/sec) | Rendering: 0.41979 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:33:48) [GET]
+  Session ID: ecd9249008f47b6eb5e2628ba81afd25
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000208)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006686)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.014986)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45161 (2 reqs/sec) | Rendering: 0.41124 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:34:50) [GET]
+  Session ID: d3705297337886a5189d554ec78f91ef
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000209)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.005303)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.011890)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45024 (2 reqs/sec) | Rendering: 0.37536 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:35:15) [GET]
+  Session ID: ba89f27f7725a01a1f2aa51335aa8dd8
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000212)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006613)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.022627)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46104 (2 reqs/sec) | Rendering: 0.41362 (89%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:35:26) [GET]
+  Session ID: cd4be35fe7533cd5d0b87c5ddcc5ad08
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000241)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.005863)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.020195)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.54839 (1 reqs/sec) | Rendering: 0.41518 (75%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:38:01) [GET]
+  Session ID: 49446b4f78330701884951b58f700d32
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000214)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.004832)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.018171)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.50120 (1 reqs/sec) | Rendering: 0.41785 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:38:48) [GET]
+  Session ID: 8bf43ed0b0252ff6f170d8d05f73dff1
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000216)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006135)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.017876)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46345 (2 reqs/sec) | Rendering: 0.42069 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:40:26) [GET]
+  Session ID: 8925a8a163c9066b5e1c76d19214fa67
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000228)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006211)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.014552)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.48774 (2 reqs/sec) | Rendering: 0.41157 (84%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:54:57) [GET]
+  Session ID: d1183825e52e705434c3da163d34afe7
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000213)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.005114)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.018523)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.49178 (2 reqs/sec) | Rendering: 0.44385 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:55:39) [GET]
+  Session ID: acee5cf5aabf2a277af117001f94e2d0
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000214)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.013211)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.068264)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.56224 (1 reqs/sec) | Rendering: 0.46038 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:56:26) [GET]
+  Session ID: 7da484b9bcdd48a2ff38151d862ff1c0
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000224)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006564)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.016775)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.48144 (2 reqs/sec) | Rendering: 0.43910 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 11:59:29) [GET]
+  Session ID: f697220543e7c4fb071ee00d36536cdb
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000267)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.049539)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.084114)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 1.73244 (0 reqs/sec) | Rendering: 1.50438 (86%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:00:07) [GET]
+  Session ID: 64b7becdaa9785c81c7d008eefcb6620
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000208)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.005231)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.017353)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.57167 (1 reqs/sec) | Rendering: 0.47648 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:08:37) [GET]
+  Session ID: 8e3547287835b37566b1a88347819eb2
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000228)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.007953)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.014726)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.51595 (1 reqs/sec) | Rendering: 0.47244 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:09:35) [GET]
+  Session ID: 1837217c4669297270d387b8bf53c2bd
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000213)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006788)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.013579)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.53481 (1 reqs/sec) | Rendering: 0.45632 (85%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:11:07) [GET]
+  Session ID: 1ef306a47f939cd4ab0b54291069c45f
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000211)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.004976)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.015357)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45968 (2 reqs/sec) | Rendering: 0.42083 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:13:32) [GET]
+  Session ID: 102cd1e65004b9b939b00f6d517e7fed
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000217)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.007190)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.013665)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.50814 (1 reqs/sec) | Rendering: 0.42954 (84%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:14:29) [GET]
+  Session ID: 93000d4167b99f6a4cd576674d85c7b6
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000213)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006791)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.020211)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.47141 (2 reqs/sec) | Rendering: 0.42513 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:15:54) [GET]
+  Session ID: aa415310940bedb1b6b0343669508165
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000217)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.007235)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.065507)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.48170 (2 reqs/sec) | Rendering: 0.38996 (80%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:17:00) [GET]
+  Session ID: 8a3c035ee27c0ffaad8bf37ff0e2cc53
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000214)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.005192)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.015370)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.53494 (1 reqs/sec) | Rendering: 0.49652 (92%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:18:32) [GET]
+  Session ID: 145163c4bc6acaf2d0ebdd5313cda2c2
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000267)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.004702)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.051252)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.52361 (1 reqs/sec) | Rendering: 0.44962 (85%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:19:34) [GET]
+  Session ID: 87189a0be0a58035fa6c6d0c95c14db0
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000212)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.004732)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.012270)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46296 (2 reqs/sec) | Rendering: 0.42707 (92%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:21:29) [GET]
+  Session ID: a64ed05aafb15b31e88949cf12d9e95d
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000212)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006758)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.012161)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.45735 (2 reqs/sec) | Rendering: 0.42061 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:22:51) [GET]
+  Session ID: 272fd9797ddffc50575c43bf3a754d3e
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000211)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.012048)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.011918)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.49845 (2 reqs/sec) | Rendering: 0.41553 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:25:21) [GET]
+  Session ID: aa942c28a21a64174bc8928b7a25cc05
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000212)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.019553)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.157259)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.62083 (1 reqs/sec) | Rendering: 0.42581 (68%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#get_recording (for 127.0.0.1 at 2008-04-15 12:26:57) [GET]
+  Session ID: c697e90d271b6b7c0a3a6d251c55fb72
+  Parameters: {"chanid"=>"1009", "action"=>"get_recording", "controller"=>"recorded", "starttime"=>"1208127600"}
+  [4;36;1mSQL (0.000227)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.044844)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.003854)[0m   [0;1mSELECT * FROM `recorded` WHERE (`recorded`.`chanid` = '1009' AND `recorded`.`starttime` = '2008-04-13 19:00:00') LIMIT 1[0m
+Completed in 0.09422 (10 reqs/sec) | Rendering: 0.01076 (11%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/1009/1208127600]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:33:20) [GET]
+  Session ID: 7eedfe0755da273f8b9782dc16a726cc
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000254)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.004756)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.015237)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.58914 (1 reqs/sec) | Rendering: 0.53884 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:48:40) [GET]
+  Session ID: 6a78f3d104382103232923fb3e6fca7f
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000225)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.005773)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.021231)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.55205 (1 reqs/sec) | Rendering: 0.42917 (77%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:51:20) [GET]
+  Session ID: 0b35fec36647caf7f98a9afe0df0441c
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000259)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.005948)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.016111)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.51094 (1 reqs/sec) | Rendering: 0.46552 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:55:44) [GET]
+  Session ID: daf60f904e342cc4a434014b361f0c2f
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000233)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.007239)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.059568)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.49084 (2 reqs/sec) | Rendering: 0.40463 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:57:44) [GET]
+  Session ID: 56de1c6c07afc796a469c37daaed2769
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000213)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006592)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.020025)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.53679 (1 reqs/sec) | Rendering: 0.48845 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 12:59:25) [GET]
+  Session ID: d9c0b9bd6848c77daa03fe9e2a7767c3
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000213)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.005529)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.018344)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.47828 (2 reqs/sec) | Rendering: 0.43564 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 13:00:05) [GET]
+  Session ID: ac50303889b657157e8ea27c7dd0fcd7
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000268)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.005403)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.014499)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.62542 (1 reqs/sec) | Rendering: 0.54179 (86%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 13:01:51) [GET]
+  Session ID: 5482de9753d9b2e8a6d523e5c185e891
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000326)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006715)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.025794)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.49629 (2 reqs/sec) | Rendering: 0.44330 (89%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 13:02:09) [GET]
+  Session ID: b5520d02807b4c51392bd5fb2dc2d174
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000210)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.007137)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.014336)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.52401 (1 reqs/sec) | Rendering: 0.43916 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 13:03:14) [GET]
+  Session ID: 94ee5c0d5a811b184889e71767e7a571
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000212)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006428)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.024135)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.52006 (1 reqs/sec) | Rendering: 0.46943 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 13:03:58) [GET]
+  Session ID: 302d9a27f61cfc0cd3b5a0277b0a3634
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000321)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006941)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.023033)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.54527 (1 reqs/sec) | Rendering: 0.45304 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 13:04:46) [GET]
+  Session ID: 928ad75e020c67bb365c3908ef1d48fc
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000254)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.007597)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.019036)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.50284 (1 reqs/sec) | Rendering: 0.45807 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 13:05:15) [GET]
+  Session ID: a8090098ec41be2eabd7d2215aa03574
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000211)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.005114)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.015182)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 1.14284 (0 reqs/sec) | Rendering: 0.56257 (49%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 15:03:55) [GET]
+  Session ID: 33cdbe1c6b2b55dcc267d4b10c234fcd
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000206)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000170)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000258)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006056)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.014423)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.44647 (2 reqs/sec) | Rendering: 0.38600 (86%) | DB: 0.00038 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 15:15:31) [GET]
+  Session ID: a6441c5d90072bae974cf5eed16ddc89
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000210)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.004652)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.014483)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.48094 (2 reqs/sec) | Rendering: 0.42055 (87%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#get_recording (for 127.0.0.1 at 2008-04-15 15:16:07) [GET]
+  Session ID: 7d2e8a65c19640a6528d546ed45519a3
+  Parameters: {"chanid"=>"1003", "action"=>"get_recording", "controller"=>"recorded", "starttime"=>"1208138520"}
+  [4;36;1mSQL (0.000210)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.004561)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.002411)[0m   [0;1mSELECT * FROM `recorded` WHERE (`recorded`.`starttime` = '2008-04-13 22:02:00' AND `recorded`.`chanid` = '1003') LIMIT 1[0m
+Completed in 0.03757 (26 reqs/sec) | Rendering: 0.01532 (40%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/1003/1208138520]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 15:16:13) [GET]
+  Session ID: 0ee08b809867dc3c059ccde387530fcc
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000213)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006212)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.013816)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46581 (2 reqs/sec) | Rendering: 0.38904 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 15:17:13) [GET]
+  Session ID: 24b719d5482fac57f26ceac1577944ba
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000248)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006188)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.014812)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46875 (2 reqs/sec) | Rendering: 0.42925 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 15:20:52) [GET]
+  Session ID: cb6cc940338e7f58c7cda088a2a03d0e
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000216)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.004568)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.011564)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46678 (2 reqs/sec) | Rendering: 0.43231 (92%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 15:24:11) [GET]
+  Session ID: 9248b2a0816b2409c560cc6f974fa2f0
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000210)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.004609)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.049392)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46664 (2 reqs/sec) | Rendering: 0.39409 (84%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 15:24:52) [GET]
+  Session ID: 2f6108f5bcab18857e85551f745e785e
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000217)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.004741)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.015023)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46167 (2 reqs/sec) | Rendering: 0.38614 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 15:25:06) [GET]
+  Session ID: 1ee776137b7925bfd53550676bdaf9fd
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000538)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006599)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.015674)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.57671 (1 reqs/sec) | Rendering: 0.53449 (92%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 16:08:28) [GET]
+  Session ID: d7db726f04e867a09feab8a138ba5ccf
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000215)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.004626)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.011644)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46232 (2 reqs/sec) | Rendering: 0.42808 (92%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 16:08:34) [GET]
+  Session ID: a1feee64057af89ffb20ac557b96a876
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000213)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.004622)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.011990)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46147 (2 reqs/sec) | Rendering: 0.42616 (92%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 17:05:08) [GET]
+  Session ID: 332cb763e461941eac4f71b9cff6f053
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000311)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.005967)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.016123)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46425 (2 reqs/sec) | Rendering: 0.38356 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 19:44:30) [GET]
+  Session ID: d7a4cc310b1dae902c19801d132f4bdf
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000262)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.005834)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.014632)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.49230 (2 reqs/sec) | Rendering: 0.43222 (87%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 20:10:03) [GET]
+  Session ID: 2d0ea5ebd66f3c6b049ad31b4ad0f4ef
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000221)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.004677)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.014531)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.50681 (1 reqs/sec) | Rendering: 0.44726 (88%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 20:14:52) [GET]
+  Session ID: abde5b8706ac77ba84226c25066f38ff
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000276)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006808)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.013298)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.52507 (1 reqs/sec) | Rendering: 0.42052 (80%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 20:15:26) [GET]
+  Session ID: 4c2da06fe19b3d41a3b31293c686ae3a
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;35;1mSQL (0.000218)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecorded Columns (0.006193)[0m   [0;1mSHOW FIELDS FROM `recorded`[0m
+  [4;35;1mRecorded Load (0.015748)[0m   [0mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.46971 (2 reqs/sec) | Rendering: 0.38872 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
+
+
+Processing RecordedController#list (for 127.0.0.1 at 2008-04-15 20:29:54) [GET]
+  Session ID: 14a1f88810446acb2a7f335591e81bad
+  Parameters: {"order"=>"starttime DESC", "action"=>"list", "controller"=>"recorded"}
+  [4;36;1mSQL (0.000214)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecorded Columns (0.006202)[0m   [0mSHOW FIELDS FROM `recorded`[0m
+  [4;36;1mRecorded Load (0.024766)[0m   [0;1mSELECT * FROM `recorded` ORDER BY starttime DESC[0m
+Completed in 0.48820 (2 reqs/sec) | Rendering: 0.43759 (89%) | DB: 0.00000 (0%) | 200 OK [http://localhost/recorded/list?order=starttime+DESC]
