@@ -20,7 +20,7 @@ class TranscodeProcessor < ApplicationProcessor
 			  file.height = file.height/divisor
 		  end
 			
-			command = "nice -n 19 ffmpeg -i $input_file$ -y -threads 4 -croptop 6 -cropbottom 6 -cropleft 6 -cropright 6 -s $width$x$height$ -r 29.97 -vcodec libx264 -g 150 -qmin 25 -qmax 51 -b 1000k -maxrate 1450k -level 30 -loop 1 -sc_threshold 40 -refs 2 -keyint_min 40 -partp4x4 1 -rc_eq 'blurCplx^(1-qComp)' -deinterlace -async 50 -acodec libfaac -ar 48000 -ac 2 -ab 128k -f mp4 $output_file$"
+			command = "nice -n 19 ffmpeg -t 00:00:30 -i $input_file$ -y -threads 4 -croptop 6 -cropbottom 6 -cropleft 6 -cropright 6 -s $width$x$height$ -r 29.97 -vcodec libx264 -g 150 -qmin 25 -qmax 51 -b 1000k -maxrate 1450k -level 30 -loop 1 -sc_threshold 40 -refs 2 -keyint_min 40 -partp4x4 1 -rc_eq 'blurCplx^(1-qComp)' -deinterlace -async 50 -acodec libfaac -ar 48000 -ac 2 -ab 128k -f mp4 $output_file$"
 			options = {
 			  :input_file => src,
 			  :output_file => destination,
