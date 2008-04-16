@@ -2,30 +2,11 @@
 
 <%= error_messages_for :video %>
 
-<% form_for(@video) do |f| %>
-  <p>
-    <b>Height</b><br />
-    <%= f.text_field :height %>
-  </p>
+<% form_for(:video, :url=>videos_path, :html=>{:multipart=>true}) do |f| %>
 
   <p>
-    <b>Width</b><br />
-    <%= f.text_field :width %>
-  </p>
-
-  <p>
-    <b>Video url</b><br />
-    <%= f.text_field :video_url %>
-  </p>
-
-  <p>
-    <b>File name</b><br />
-    <%= f.text_field :file_name %>
-  </p>
-
-  <p>
-    <b>Ext</b><br />
-    <%= f.text_field :ext %>
+    <b>File</b><br />
+    <%= f.file_field :video %>
   </p>
 
   <p>

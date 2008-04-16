@@ -46,9 +46,9 @@ class VideosController < ApplicationController
     @video = Video.new(params[:video])
     
     if @video.save
-	    payload = VideoPayload.new( 	:id => @video.id,
-		    							:src => @video.upload_path,
-									:dst => @video.convert_path )
+	    payload = VideoPayload.new( :id => @video.id,
+		    				                  :src => @video.upload_path,
+						                      :dst => @video.convert_path )
 	    publish :transcode, payload.to_yaml
 	    flash[:notice] = "Starting Transcode"
 	    redirect_to (@video)
